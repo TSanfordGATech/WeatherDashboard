@@ -1,0 +1,8 @@
+/* making the jumotron fit my page */
+.jumbotron {
+    text-align: center;
+    background-color: rgb(52,58,64) ;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: linen;
+}
