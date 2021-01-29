@@ -5,14 +5,16 @@
 Created by: Tori Sanford
 Date: 01/29/2021
 Contact: Tori.danielle.clark91@gmail.com
-Link to deployed project:  ------input at end 
-<!-- Screen shot of completed assignment: ------input at end ![Final Screen shot](./assets/planner.png)  -->
+Link to deployed project:  https://tsanfordgatech.github.io/WeatherDashboard/
+Screen shot of completed assignment: ![Final Screen shot](./assets/weather.png) 
 
 ## About this Project: 
 This project is my server-side APIs homework assignment. I will use third-party APIs to create a weather dashboard. 
 
 ## What I learned from this project: 
-------input at end 
+- More experiance with controlling format with JS
+- Got better at locating resources for methods
+- calling in API's with DOM manipulation
 
 
 ## User Story
