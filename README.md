@@ -6,7 +6,7 @@ Created by: Tori Sanford
 Date: 01/29/2021
 Contact: Tori.danielle.clark91@gmail.com
 Link to deployed project:  ------input at end 
-Screen shot of completed assignment: ------input at end ![Final Screen shot](./assets/planner.png) 
+<!-- Screen shot of completed assignment: ------input at end ![Final Screen shot](./assets/planner.png)  -->
 
 ## About this Project: 
 This project is my server-side APIs homework assignment. I will use third-party APIs to create a weather dashboard. 
