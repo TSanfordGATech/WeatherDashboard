@@ -1,4 +1,5 @@
-// First, we are setting all of the constant values to return the elements information of user input
+// First, we are setting all of the constant values to return the elements information of user input. 
+// Using const as it WILL NOT change. 
 function initPage() {
     const inputEl = document.getElementById("city-input");
     const searchEl = document.getElementById("search-button");
@@ -24,6 +25,7 @@ function initPage() {
             .then(function (response) {
                 console.log(response);
                 //  Parse response to display current conditions
+                // use depricated one for UV index
                 //  *Citing website/resources***** Method for using "date" objects obtained from open weather documentation, https://openweathermap.org/api/weather-map-2 and formatting from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date 
                 const currentDate = new Date(response.data.dt * 1000);
                 console.log(currentDate);
@@ -48,6 +50,9 @@ function initPage() {
                         currentUVEl.innerHTML = "UV Index: ";
                         currentUVEl.append(UVIndex);
                     });
+
+
+
                 //  Using saved city name, execute a 5-day forecast get request from open weather map api
                 let cityID = response.data.id;
                 let forecastQueryURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&appid=" + APIKey;
@@ -64,7 +69,7 @@ function initPage() {
                             const forecastMonth = forecastDate.getMonth() + 1;
                             const forecastYear = forecastDate.getFullYear();
                             const forecastDateEl = document.createElement("p");
-                            forecastDateEl.setAttribute("class", "mt-3 mb-0 forecast-date");
+                            forecastDateEl.setAttribute("class", "mt-3 mb-3 m-3 forecast-date");
                             forecastDateEl.innerHTML = forecastMonth + "/" + forecastDay + "/" + forecastYear;
                             forecastEls[i].append(forecastDateEl);
                             const forecastWeatherEl = document.createElement("img");
@@ -82,6 +87,7 @@ function initPage() {
             });
     }
 
+    // Start the event listeners 
     searchEl.addEventListener("click", function () {
         const searchTerm = inputEl.value;
         getWeather(searchTerm);
@@ -122,4 +128,5 @@ function initPage() {
         getWeather(searchHistory[searchHistory.length - 1]);
     }
 }
+// function kick
 initPage();
