@@ -33,26 +33,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 bg-light">
+                    <!-- starting the HTML form for all of the entries, starting with the city search input-->
                     <p class="search-header my-1">Search for a City:</p>
                     <div class="input-group mb-3">
                         <input id="city-input" type="text" class="form-control" placeholder="Enter City Name"
                             aria-label="Enter city name">
                         <div class="input-group-append">
+                            <!-- button styling to provide background on index -->
                             <button class="btn btn-primary" type="button" id="search-button">
                                 <!-- font awesome search icon-->
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
                     </div>
-                    <!-- button to clear the local storage -->
+                    <!-- button to clear the history of the searches out-->
                     <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
                     <ul class="list-group"></ul>
                     <form id="history"></form>
                 </div>
                 <!-- rows from bootstrap -->
                 <div class="col-8">
-                    <div class="row mr-0">
-                        <div class="col-12 border border-dark m-3 rounded">
+                    <div class="row mr-2">
+                        <div class="col-12 border border-dark m-2 rounded">
                             <div class="row">
                                 <div class="col-12">
                                     <!-- create the locations for the return of weather information -->
@@ -77,17 +79,19 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 d-flex">
-                                    <p id="UV-index" span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p>
+                                    <p id="UV-index" span class="current bg-danger rounded py-2 px-2 text-white"></span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- Creating area for the 5 day forcast to populate, header-->
                     <div class="row">
                         <div class="col-12">
                             <h3>5-Day Forecast</h3>
                         </div>
                     </div>
+
                     <!-- Creating 5 rows for the days -->
                     <div class="row">
                         <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>

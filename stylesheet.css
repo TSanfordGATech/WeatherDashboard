@@ -6,3 +6,19 @@
     padding-top: 1%;
     color: linen;
 }
+
+/* Adding the three colors to my UV index */
+/* #uv-index {
+} */
+
+#uv-indexBad {
+    background-color: maroon;
+}
+
+#uv-indexGood {
+    background-color: green;
+}
+
+#uv-indexCaution {
+    background-color: yellow;
+}

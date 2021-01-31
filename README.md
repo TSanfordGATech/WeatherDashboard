@@ -15,6 +15,7 @@ This project is my server-side APIs homework assignment. I will use third-party 
 - More experiance with controlling format with JS
 - Got better at locating resources for methods
 - calling in API's with DOM manipulation
+- slightly improved my ability to make things dynamic 
 
 
 ## User Story

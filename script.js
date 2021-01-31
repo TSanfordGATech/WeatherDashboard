@@ -49,11 +49,22 @@ function initPage() {
                         UVIndex.innerHTML = response.data[0].value;
                         currentUVEl.innerHTML = "UV Index: ";
                         currentUVEl.append(UVIndex);
+                        if (UVIndex[i] < 2) {
+                            inpDiv.addClass("uv-indexBad ");
+                            inpDiv.attr("uv-indexBad ");
+                        }
+                        else if (UVIndex[i] > 3) {
+                            inpDiv.addClass("uv-indexCaution");
+                            inpDiv.attr("uv-indexCaution");
+                        }
+                        else if (UVIndex[i] > 5) {
+                            inpDiv.addClass("uv-indexGood");
+                            inpDiv.attr("uv-indexGood");
+                        }
                     });
 
 
-
-                //  Using saved city name, execute a 5-day forecast get request from open weather map api
+                //  Using saved city name, provide the user with a 5-day forecast get request from open weather map api
                 let cityID = response.data.id;
                 let forecastQueryURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&appid=" + APIKey;
                 axios.get(forecastQueryURL)
@@ -101,7 +112,6 @@ function initPage() {
         searchHistory = [];
         renderSearchHistory();
     })
-
     function k2f(K) {
         return Math.floor((K - 273.15) * 1.8 + 32);
     }
